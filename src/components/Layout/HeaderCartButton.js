@@ -14,7 +14,6 @@ const HeaderCartButton = (props) => {
       <span>Your Cart</span>
       <span className={classes.badge}>
         {ctx.items.reduce((curNumber, item) => {
-          debugger;
           return curNumber + item.amount;
         }, 0)}
       </span>
